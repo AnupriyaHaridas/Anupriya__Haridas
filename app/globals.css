@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.footer-ul {
+  @apply sm:flex justify-between;
+}
+
+.footer-ul li {
+  @apply flex items-center flex-col;
+}
+
+.footer-ul li label{
+  @apply text-lg font-semibold;
+}
+
+.footer-ul li label p{
+  @apply text-sm font-light;
+}
+
+.experience ul li{
+  @apply list-disc;
+}
+
+.link-rounded{
+  @apply font-bold rounded-full h-28 w-28 flex items-center justify-center hover:bg-transparent text-black border border-black hover:scale-125 transition ease-in duration-500;
+}
+
+.horizontal-line{
+  @apply border-t m-3 border-gray-400;
+}
+
+.skills ul li{
+  @apply  w-fit p-4 m-1 rounded text-sm font-semibold;
+
+}
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  @apply bg-background;
+  font-family: serif;
+}
+
+.contact .info label{
+  @apply text-lg font-semibold;
+}
+.contact .info p{
+  @apply text-sm font-light mb-4;
+}
