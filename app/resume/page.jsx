@@ -2,12 +2,11 @@
 import "@/app/globals.css";
 import React from "react";
 import {useState} from 'react';
-import Baker from "@/components/Baker";
 
 const Page = () => {
     const [readMore , setReadMore] = useState(false);
   return (
-    <main className="font-serif px-4 md:px-24 mb-5">
+    <main className="font-serif px-4 pt-8 md:px-24 mb-5">
         <h1 className="text-4xl font-bold mb-10">Resume</h1>
         <div className="horizontal-line my-6 "></div>
         <div className="sm:flex flex-col md:flex-row">

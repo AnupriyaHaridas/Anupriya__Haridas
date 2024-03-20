@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import menu from '/public/icons/menu.svg';
+import check from '/public/icons/check.svg'
 import { useState } from 'react';
-import image from "/public/assets/author.png";
 const Nav = () => {
     const [toggleDropdown, setToggleDropdown] = useState(false);
   
@@ -37,36 +37,32 @@ const Nav = () => {
             </div>
         </div>
         {/*Mobile navigation*/}
-        <div className='flex sm:hidden relative'>
+        <div className='flex sm:hidden m-6 relative'>
             <div className='flex'>
-                <Image 
-                    src={image}
-                    width={37} 
-                    height={37}
-                    onClick={() => setToggleDropdown((prev) => !prev)} 
-                    alt='' 
-                    className='w-auto h-auto'/>
-                    {toggleDropdown && (
-                        <div className='dropdown'>
-                            <a href='/'
-                            className='dropdown_link'
-                            onClick={()=>setToggleDropdown(false)}>
-                                Home
-                            </a>
-                            <a href='/resume'
-                            className='dropdown_link'
-                            onClick={() => setToggleDropdown
-                            (false)}>
-                                Resume
-                            </a>
-                            <a href='/contact'
-                            className='dropdown_link'
-                            onClick={() => setToggleDropdown
-                            (false)}>
-                                Contact
-                            </a>
-                        </div>
-                    )}
+                <svg onClick={() => setToggleDropdown((prev) => !prev)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                {toggleDropdown && (
+                    <div className='dropdown absolute flex w-28 flex-col bg-slate-50 rounded-md gap-2'>
+                        <a href='/'
+                        className='w-full p-3 hover:bg-slate-300'
+                        onClick={()=>setToggleDropdown(false)}>
+                            Home
+                        </a>
+                        <a href='/resume'
+                        className='w-full p-3 hover:bg-slate-300'
+                        onClick={() => setToggleDropdown
+                        (false)}>
+                            Resume
+                        </a>
+                        <a href='/contact'
+                        className='w-full p-3 hover:bg-slate-300'
+                        onClick={() => setToggleDropdown
+                        (false)}>
+                            Contact
+                        </a>
+                    </div>
+                )}
             </div>
         </div>
     </nav>

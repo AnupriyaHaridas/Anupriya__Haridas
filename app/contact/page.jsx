@@ -2,9 +2,6 @@
 import "@/app/globals.css";
 import {useState} from 'react'
 import {useRouter} from 'next/navigation'
-import Image from 'next/image';
-import check from '/public/icons/check.svg'
-import { set } from "mongoose";
 
 const Contact = () => {
   const router = useRouter();
@@ -51,7 +48,7 @@ const Contact = () => {
 
 
   return (
-    <main className="contact min-h-[60vh] font-serif px-4 md:px-24 mb-5">
+    <main className="contact min-h-[60vh] pt-8 font-serif px-4 md:px-24 mb-5">
       <h1 className="text-4xl block w-full font-bold mb-10">Contact</h1>
       <div className="sm:flex sm:flex-rowsm:flex sm:flex-row">
         <div className="info sm:basis-1/2">
@@ -116,7 +113,7 @@ const Contact = () => {
           </form>
           <div className="hidden pop-up">
             <div className="popup-wrap sm:flex sm:flex-row gap-3 p-6 bg-[#dfefd8] rounded-md">
-              <svg class="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <svg className="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
               </svg>
               <div className="flex flex-col">
@@ -127,9 +124,6 @@ const Contact = () => {
           </div>
         </div>
         </div>
-        
-       
-        
     </main>
   )
 }
