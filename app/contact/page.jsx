@@ -116,7 +116,7 @@ const Contact = () => {
               <svg className="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
               </svg>
-              <div className="flex flex-col">
+              <div className="mt-3 flex flex-col">
                 <label className="text-md text-green-800 font-bold">Successfully Submitted</label>
                 <p className="text-sm text-green-700">Thank you for reaching out! I will get back to you soon.</p>
               </div>
