@@ -16,8 +16,8 @@ export default function Home() {
            <div className="flex justify-center mt-8">
             <a href="/resume" className="bg-orange-400 link-rounded">
               Resume </a>
-            <a href="/projects" className="bg-red-500 link-rounded ml-8">
-              Projects </a>
+            <a href="/resume" className="bg-red-500 link-rounded ml-8">
+              Skills </a>
             <a href="/contact" className="bg-blue-400  link-rounded ml-8">
               Contact </a>
            </div>
